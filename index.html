@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Secreto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><strong>CyberTeam</strong></li>
+                <li><a href="index.html">Número Secreto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="reglatxt">
+            <h3>¿Cómo jugar?</h3>
+            <p>Debes intentar adivinar un número del 1 al 10.
+Escribe tu número en la caja y presiona Intentar.
+
+Si aciertas, ganarás el juego.
+Si no aciertas, puedes seguir intentándolo hasta encontrar el número correcto.
+
+Cuando quieras volver a jugar, simplemente haz clic en Nuevo juego y el sistema generará un número secreto diferente.
+</p>
+<br>
+<P>¡Buena suerte y diviértete!</P>
+        </div>
+    <div class="container">
+        <h2>Juego del número secreto</h2>
+
+        <p>Indica un número del 1 al 10</p>
+
+        <input type="number" id="numeroIngresado" placeholder="Escribe un número...">
+
+        <div class="botones">
+            <button onclick="verificarNumero()">Intentar</button>
+            <button onclick="nuevoJuego()">Nuevo juego</button>
+        </div>
+
+        <p id="mensaje"></p>
+        <p id="intentos"></p>
+    </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025, Proyecto creado por el grupo "CyberTeam" de Ing. en Sistemas.  </p>
+    </footer>
+
+
+</body>
+</html>
